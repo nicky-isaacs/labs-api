@@ -1,0 +1,19 @@
+schema {
+    query: Query
+}
+
+"""Root of all queries."""
+type Query {
+    """Get a user by their email"""
+    user_by_email(email: String!): User
+}
+
+type Book {
+    title: String!
+}
+
+type User {
+    email: String
+    favorite_books: [Book!]!
+    friend: User
+}
