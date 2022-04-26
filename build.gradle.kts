@@ -31,9 +31,11 @@ dependencies {
 
     implementation("io.micronaut:micronaut-validation")
 
-    implementation("io.projectreactor:reactor-core:3.4.17")
     runtimeOnly("ch.qos.logback:logback-classic")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
+
+    testImplementation("org.testcontainers:mysql:1.17.1")
+    implementation("mysql:mysql-connector-java:8.0.28")
 }
 
 application {

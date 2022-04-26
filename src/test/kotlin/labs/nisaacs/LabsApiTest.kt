@@ -11,6 +11,9 @@ import io.micronaut.test.extensions.kotest.annotation.MicronautTest
 @MicronautTest
 class LabsApiTest(private val application: EmbeddedApplication<*>, @Client("/") private val client: HttpClient) :
     StringSpec({
+
+
+
         "test the server is running" {
             assert(application.isRunning)
         }
