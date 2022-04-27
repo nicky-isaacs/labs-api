@@ -17,3 +17,10 @@ graphql:
     template-path: classpath:graphiql/index.html
     template-parameters:
     page-title: GraphiQL
+
+#datasources:
+#  default:
+#    url: ${JDBC_URL:`jdbc:mysql://localhost:3306/db`}
+#    username: ${JDBC_USER:root}
+#    password: ${JDBC_PASSWORD:}
+#    dialect: MYSQL

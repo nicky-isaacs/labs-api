@@ -1,0 +1,1 @@
+docker build --platform linux/amd64  -f fastmysql8.Dockerfile -t amd64/labs-api/fastmysql:8 .

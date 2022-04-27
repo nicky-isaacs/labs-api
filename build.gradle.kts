@@ -9,7 +9,9 @@ plugins {
 version = "0.1"
 group = "labs.nisaacs"
 
-val kotlinVersion=project.properties.get("kotlinVersion")
+val kotlinVersion: String by project
+val exposedVersion: String by project
+
 repositories {
     mavenCentral()
 }
@@ -36,6 +38,10 @@ dependencies {
 
     testImplementation("org.testcontainers:mysql:1.17.1")
     implementation("mysql:mysql-connector-java:8.0.28")
+
+    implementation("org.jetbrains.exposed:exposed-core:$exposedVersion")
+    implementation("org.jetbrains.exposed:exposed-dao:$exposedVersion")
+    implementation("org.jetbrains.exposed:exposed-jdbc:$exposedVersion")
 }
 
 application {
